@@ -5,13 +5,13 @@
 replicaCount: 1
 
 image:
-  repository: abhishekf5/go-web-app
+  repository: aishuvthija/go-web-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "10016307834"
+  tag: "16289811092"
 
 ingress:
-  enabled: false
+  enabled: true
   className: ""
   annotations: {}
     # kubernetes.io/ingress.class: nginx
@@ -21,4 +21,3 @@ ingress:
       paths:
         - path: /
           pathType: ImplementationSpecific
-
